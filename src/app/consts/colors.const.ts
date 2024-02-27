@@ -1,0 +1,16 @@
+export const USER_COLORS = [
+  '#30bced',
+  '#6eeb83',
+  '#ffbc42',
+  '#ecd444',
+  '#ee6352',
+  '#9ac2c9',
+  '#8acb88',
+  '#1be7ff',
+  '#49f802',
+  '#ff1b1b',
+  '#1b1fff',
+  '#ff1bf4',
+  '#09a646',
+  '#9103d7',
+];

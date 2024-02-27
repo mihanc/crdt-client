@@ -1,0 +1,18 @@
+<div class="flex flex-col justify-center items-center min-h-[100dvh]">
+  <div>
+    <ul class="flex gap-2">
+      <li *ngFor='let room of (rooms$ | async)'
+          class="px-4 py-2 border border-gray-300 hover:bg-gray-200 transition-all cursor-pointer">
+        <span>{{room.name}}</span>
+        <div class="flex gap-2 mt-1">
+          <a [routerLink]='room._id' class="text-sm underline">Open</a>
+        </div>
+      </li>
+    </ul>
+    <div class="mt-5 flex justify-center max-w-[600px]">
+      <input type="text" [(ngModel)]='roomName' placeholder="Enter room name"
+             class="h-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5">
+      <button (click)='createRoom()'>Create a room</button>
+    </div>
+  </div>
+</div>
